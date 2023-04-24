@@ -45,11 +45,17 @@ const GuestPage = () => {
   const handleTemp = () => {
     router.push('/temp')
   }
+
+  const handleH2H = () => {
+    router.push('/h2h')
+  }
+
   return (
     <Flex alignItems="center" justifyContent="center">
       <Image onClick={handleHome} boxSize='75px' borderRadius='full' position="absolute" top={2} left={2} cursor="pointer" src='https://storage.googleapis.com/k-react.appspot.com/images/profilePicture/7JVZX7w1WO3FSm9lovCa_300x300.jpg'/>
       <Box position="absolute" top={90} left={2} cursor="pointer" onClick={handleTest}>Test</Box>
       <Box position="absolute" top={110} left={2} cursor="pointer" onClick={handleTemp}>Temp</Box>
+      <Box position="absolute" top={130} left={2} cursor="pointer" onClick={handleH2H}>H2H</Box>
       <Box p={12} rounded={6} background={formBackground}>
         <Heading mb={6}>Welcome, Guest!</Heading>
         <p>H2H</p>
