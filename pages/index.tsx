@@ -17,7 +17,9 @@ const IndexPage = () => {
 
   return (
     <>
-    <Heading>Odd Bets</Heading>
+    <Box justifyContent="center" alignItems="center">
+      <Heading size="2xl" textAlign="center">Odd Bets</Heading>
+    </Box>
     <Flex height="100vh" alignItems="center" justifyContent="center">
       <Flex direction="column" background={formBackground} p={12} rounded={6}>
         <Heading mb={6}>Log in</Heading>
@@ -31,7 +33,7 @@ const IndexPage = () => {
         }}>
           {toggle ? <IoMoon/> : <IoSunny/>}
         </Box>
-        <Image boxSize='75px' borderRadius='full' position="absolute" top={2} left={2} cursor="pointer" src='https://storage.googleapis.com/k-react.appspot.com/images/profilePicture/7JVZX7w1WO3FSm9lovCa_300x300.jpg'/>
+        <Image boxSize='75px' borderRadius='full' position="absolute" top={3} left={5} cursor="pointer" src='https://storage.googleapis.com/k-react.appspot.com/images/profilePicture/7JVZX7w1WO3FSm9lovCa_300x300.jpg'/>
       </Flex>
     </Flex>
     </>
